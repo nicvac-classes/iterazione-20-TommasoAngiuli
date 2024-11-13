@@ -1,11 +1,15 @@
 #include <iostream>
 using namespace std;
-
-int main() {
-    string nome;
-    cout << "Inserisci il tuo nome: ";
-    cin >> nome;
-    cout << "Ciao " <<nome<< "!" << endl;
+int main() 
+{
+    int blocchi, h, i;
+    cout << "inserisci il numero di blocchi" << endl;
+    cin >> blocchi;
+    i = 0;
+    h = 0;
+    while (i + h < blocchi) {
+        h = h + 1;
+        i = i + h;
+    }
+    cout << "l'altezza è " << h << endl;
 }
-
-//LEGGERE LE ISTRUZIONI NEL FILE README.md
